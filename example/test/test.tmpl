@@ -1,0 +1,11 @@
+package sss
+
+// {{ Filename .Name }}
+func X() string {
+
+    x := {{GoValue .Test.Name }}
+
+    _ = "{{ Test }}"
+
+    return x + {{GoValue .Name}}
+}

@@ -1,0 +1,14 @@
+package {{.Package}}
+
+import (
+	"encoding/base64"
+	"io"
+	"strings"
+	_ "embed"
+)
+
+//go:embed {{.TemplateFilename}}
+var _{{.StructName}} string
+func (h {{.StructName}}) Template() string {
+    return  _{{.StructName}}
+}

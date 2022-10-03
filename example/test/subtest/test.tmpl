@@ -1,0 +1,9 @@
+package sss
+
+// {{ Filename .Name }}
+func SubTest() string {
+
+    x := {{GoValue .Test.Name }}
+
+    return x + {{GoValue .Name}}
+}
